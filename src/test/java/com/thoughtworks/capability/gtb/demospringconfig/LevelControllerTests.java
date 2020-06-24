@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 @AutoConfigureMockMvc
-@TestPropertySource(properties = "levelNumber=1")
+@TestPropertySource(properties = "levelNumber=2")
 @SpringBootTest
 class LevelControllerTests {
 
