@@ -11,6 +11,33 @@ public class MailConfig {
     private String hostname;
     private int port;
     private String from;
+    private List<String> defaultRecipients;
+    private Map<String,Boolean> additionalHeaders;
+    private Credentials credentials;
+
+    public List<String> getDefaultRecipients() {
+        return defaultRecipients;
+    }
+
+    public void setDefaultRecipients(List<String> defaultRecipients) {
+        this.defaultRecipients = defaultRecipients;
+    }
+
+    public Map<String, Boolean> getAdditionalHeaders() {
+        return additionalHeaders;
+    }
+
+    public void setAdditionalHeaders(Map<String, Boolean> additionalHeaders) {
+        this.additionalHeaders = additionalHeaders;
+    }
+
+    public Credentials getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Credentials credentials) {
+        this.credentials = credentials;
+    }
 
     public String getHostname() {
         return hostname;
